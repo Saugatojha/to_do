@@ -4,83 +4,134 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal To-Do-List</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main>
-      <header>
-        <h1>Smart Assignment To-Do</h1>
-      </header>
-      <section class="add-assignment">
-        <h2>Add New Assignment</h2>
-        <form id="form-container">
-          <div class="form-desgin">
-            <label for="assignment_name">Assignment Title: </label>
-            <input
-              placeholder="Enter your assignment"
-              id="assignment_name"
-              type="text"
-              name="assignment_name"
-            />
-            <br />
-          </div>
+    <div class="container">
+      <main>
+        <header>
+          <h1>Smart Assignment To-Do</h1>
+        </header>
+        <section class="add-assignment">
+          <h2>Add New Assignment</h2>
+          <form id="form-container">
+            <div class="form-desgin">
+              <label for="assignment_name">Assignment Title: </label>
+              <input
+                placeholder="Enter your assignment"
+                id="assignment_name"
+                type="text"
+                name="assignment_name"
+              />
+              <br />
+            </div>
 
-          <div class="form-desgin">
-            <label for="course_name">Course: </label>
-            <input
-              placeholder="Enter your course name"
-              id="course_name"
-              type="text"
-              name="course_name"
-            />
-            <br />
-          </div>
+            <div class="form-desgin">
+              <label for="course_name">Course: </label>
+              <input
+                placeholder="Enter your course name"
+                id="course_name"
+                type="text"
+                name="course_name"
+              />
+              <br />
+            </div>
 
-          <div class="form-desgin">
-            <label for="duedate">Due Date: </label>
-            <input type="date" id="assignment_date" name="duedate" />
-            <br />
-          </div>
+            <div class="form-desgin">
+              <label for="duedate">Due Date: </label>
+              <input type="date" id="duedate" name="duedate" />
+              <br />
+            </div>
 
-          <div class="form-desgin">
-            <span>Type:</span>
-            <label for="indvidual_assignment">Individual</label>
-            <input
-              type="radio"
-              id="indvidual_assignment"
-              value="indvidual_assignment"
-              name="type"
-            />
-            <label for="group_assignment">Group</label>
-            <input
-              type="radio"
-              id="group_assignment"
-              value="group_assignment"
-              name="type"
-            />
-          </div>
+            <div class="form-desgin">
+              <span>Type:</span>
+              <label for="indvidual_assignment">Individual</label>
+              <input
+                type="radio"
+                id="indvidual_assignment"
+                value="indvidual_assignment"
+                name="type"
+              />
+              <label for="group_assignment">Group</label>
+              <input
+                type="radio"
+                id="group_assignment"
+                value="group_assignment"
+                name="type"
+              />
+            </div>
 
-          <div class="form-desgin">
-            <span>Priority:</span>
-            <button>High</button>
-          </div>
+            <div class="form-desgin">
+              <span>Priority:</span>
+              <button type="button">High</button>
+            </div>
 
-          <div class="form-desgin">
-            <button>+ Add assignment</button>
-          </div>
-        </form>
-      </section>
-      <section>
-        <input type="text" />
-        <input type="text" />
-        <input type="text" />
-        <input type="text" />
-      </section>
-      <section>
-        <input type="text" />
-        <input type="text" />
-        <input type="text" />
-        <input type="text" />
-      </section>
-    </main>
+            <div class="form-desgin">
+              <button type="submit">+ Add assignment</button>
+            </div>
+          </form>
+        </section>
+
+<section class="list-section">
+  <!-- Assignment Header with Priority and Title -->
+  <span class="assignment-header">🔴 HIGH | DBMS Assignment</span>
+
+  <!-- Course -->
+  <div class="assignment-list-desgin">
+    <p><strong>Course:</strong> DBMS</p>
+  </div>
+
+  <!-- Type (Individual/Group) -->
+  <div class="assignment-list-desgin">
+    <p><strong>Type:</strong> Individual</p>
+  </div>
+
+  <!-- Due Date -->
+  <div class="assignment-list-desgin">
+    <p><strong>Due:</strong> Sun, Jan 14</p>
+  </div>
+
+  <!-- Suggested Start -->
+  <div class="assignment-list-desgin">
+    <p><strong>Suggested Start:</strong> Thu</p>
+  </div>
+
+  <!-- Action Button -->
+  <div class="assignment-list-desgin">
+    <button type="button">Mark as Done</button>
+  </div>
+</section>
+
+<!-- Another assignment example -->
+<section class="list-section">
+  <span class="assignment-header">🟡 MEDIUM | Group Project</span>
+
+  <div class="assignment-list-desgin">
+    <p><strong>Course:</strong> Software Engineering</p>
+  </div>
+
+  <div class="assignment-list-desgin">
+    <p><strong>Type:</strong> Group</p>
+  </div>
+
+  <div class="assignment-list-desgin">
+    <p><strong>Due:</strong> Sun, Jan 14</p>
+  </div>
+
+  <div class="assignment-list-desgin">
+    <p><strong>Suggested Start:</strong> Sun</p>
+  </div>
+
+  <div class="assignment-list-desgin">
+    <button type="button">Mark as Done</button>
+  </div>
+</section>
+
+        
+
+        </div>
+      </main>
+    </div>
   </body>
 </html>

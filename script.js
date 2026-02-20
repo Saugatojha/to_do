@@ -13,13 +13,20 @@
 
 //   form.reset();
 // });
-const title= document.getElementsByClassName("counter");
-const tap= document.getElementById("count");
-const increase=document.getElementById("increase")
-const decrease=document.getElementById("decrease")
-
-increase.addEventListener ("click", function (event) {
-    event.preventDefault();
-    tap.textContent=parseInt(tap.textContent)+1;
+const count= document.getElementById("count");
+const add=document.getElementById("increase")
+add.addEventListener ("click", function (event) {
+count.textContent=parseInt(count.textContent)+1;
 
 });
+ 
+const read= document.getElementById("count");
+const sub= document.getElementById("decrease");
+
+sub.addEventListener("click", function(hi){
+ count.textContent=parseInt(count.textContent)+1;
+   
+}
+);
+ 
+

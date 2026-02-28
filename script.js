@@ -1,19 +1,20 @@
-// Step 1: Grab the elements from the HTML
-let multiply=document.getElementById("multiply");
-let divide=document.getElementById("divide");
-let displaycount=document.getElementById("count");
+// take input from user
+const form=document.getElementById("form-container");
+const name=document.getElementById("assignment_name");
+const course=document.getElementById("course_name");
+const duedate=document.getElementById("duedate");
+// read the input taken by user 
+form.addEventListener("submit", function(event){
+   event.preventDefault();
+// Read what user typed
+   const assignmentName = name.value;   
+   const courseName = course.value;     
+   const dueDate = duedate.value;      
 
-// Step 2: Store the number in a variable
-let count=1;
-
-// Step 3: When multiply is clicked, double the number
-multiply.addEventListener("click", function(){
-count=count*2;
-  displaycount.textContent = count;
+// display the input in console
+console.log(assignmentName);
+console.log(courseName);
+console.log(dueDate);
 });
 
-// Step 4: When divide is clicked, halve the number
-divide.addEventListener("click", function(){
-    count= count/2;
-    displaycount.textContent=count;
-})
+

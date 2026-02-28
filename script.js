@@ -1,32 +1,19 @@
-// const form = document.getElementById("form-container");
-// const list = document.getElementById("list");
+// Step 1: Grab the elements from the HTML
+let multiply=document.getElementById("multiply");
+let divide=document.getElementById("divide");
+let displaycount=document.getElementById("count");
 
-// form.addEventListener("submit", function (event) {
-//   event.preventDefault();
+// Step 2: Store the number in a variable
+let count=1;
 
-//   const title = document.getElementById("assignment_name").value;
-
-//   const newItem = document.createElement("p");
-//   newItem.textContent = title;
-
-//   list.appendChild(newItem);
-
-//   form.reset();
-// });
-const count= document.getElementById("count");
-const add=document.getElementById("increase")
-add.addEventListener ("click", function (event) {
-count.textContent=parseInt(count.textContent)+1;
-
+// Step 3: When multiply is clicked, double the number
+multiply.addEventListener("click", function(){
+count=count*2;
+  displaycount.textContent = count;
 });
- 
-const read= document.getElementById("count");
-const sub= document.getElementById("decrease");
 
-sub.addEventListener("click", function(hi){
- count.textContent=parseInt(count.textContent)+1;
-   
-}
-);
- 
-
+// Step 4: When divide is clicked, halve the number
+divide.addEventListener("click", function(){
+    count= count/2;
+    displaycount.textContent=count;
+})
